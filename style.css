@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin:10%;
+    /* colocou as tags filho na mesma linha(Row)*/
+    display:flex;
+    align-items: center;
+    /* posicionar o texto a esquerda e a imagem a direita alinhar com espaçamento entre eles*/
+    justify-content: space-between; 
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+    /* tamanho da fonte */
+    font-size: 36px;
+    
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+}
+
