@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,6 @@
 
 body{
     height: 100vh;
-    width: 100%;
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -16,9 +17,9 @@ body{
 }
 
 .apresentacao {
-    margin:10%;
+    margin:10% 15%;
     /* colocou as tags filho na mesma linha(Row)*/
-    display:flex;
+    display: flex;
     align-items: center;
     /* posicionar o texto a esquerda e a imagem a direita alinhar com espaçamento entre eles*/
     justify-content: space-between; 
@@ -26,15 +27,43 @@ body{
 
 .apresentacao__conteudo {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
     /* tamanho da fonte */
     font-size: 36px;
+    /* propriedade para importar a font */
+    font-family: "Krona One", serif;
     
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
+    font-family: "Montserrat", serif;
 }
 
+.apresentacao__links {
+    /* quando for elemento pai, começar por:*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__button {
+    background-color: #22D4FD;
+    width: 280px;
+    /* alinhamento do texto */
+    text-align: center;
+    /* raio de arredondamento da borda */
+    border-radius: 16px;
+    font-size: 24px;
+    /* espaçamento da font dentro do button, o primeiro valor é do eixo vertical e o segundo do eixo horizontal. Se colocar apenas um valor, ele vai executar em ambos os eixos*/
+    padding: 21.5px 0;
+    /* tirar a decoração do button por padrão */
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", serif;
+    
+}
