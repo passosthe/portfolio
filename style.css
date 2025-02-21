@@ -6,7 +6,8 @@
 }
 
 body{
-    height: 100vh;
+    /* todo conteudo fica visivel no tamanho da página */
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -17,29 +18,28 @@ body{
 }
 
 .apresentacao {
-    margin:10% 15%;
+    padding: 8% 15%;
     /* colocou as tags filho na mesma linha(Row)*/
     display: flex;
     align-items: center;
     /* posicionar o texto a esquerda e a imagem a direita alinhar com espaçamento entre eles*/
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-
+    
 .apresentacao__conteudo {
     width: 615px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
+    
 .apresentacao__conteudo__titulo {
     /* tamanho da fonte */
     font-size: 36px;
     /* propriedade para importar a font */
     font-family: "Krona One", serif;
-    
 }
-
+  
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
     font-family: "Montserrat", serif;
@@ -48,22 +48,58 @@ body{
 .apresentacao__links {
     /* quando for elemento pai, começar por:*/
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 }
 
+.apresentacao__links__subtitulo {
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+    
 .apresentacao__links__button {
-    background-color: #22D4FD;
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
     /* alinhamento do texto */
     text-align: center;
     /* raio de arredondamento da borda */
-    border-radius: 16px;
+    border-radius: 8px;
+    border: 2px solid #22D4FD;
     font-size: 24px;
     /* espaçamento da font dentro do button, o primeiro valor é do eixo vertical e o segundo do eixo horizontal. Se colocar apenas um valor, ele vai executar em ambos os eixos*/
     padding: 21.5px 0;
     /* tirar a decoração do button por padrão */
     text-decoration: none;
+    color: #F6F6F6;
+    font-family: "Montserrat", serif;
+}
+
+.apresentacao__links__button:hover {
+    background-color: #272727;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 24px;
     color: #000000;
     font-family: "Montserrat", serif;
+    font-weight: 400;
+    background-color: #22D4FD;
+    padding: 24px;
     
 }
+
+    
+
+
+    
+
+    
+    
+
